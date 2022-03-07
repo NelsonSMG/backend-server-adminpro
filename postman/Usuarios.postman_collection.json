@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "796cd032-3ef5-43d1-bb84-71a441ce3264",
+		"name": "Usuarios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5500/usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "test2",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test2@test2.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "ADMIN_ROLE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5500/usuario?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYyMWU2MWRjZDBkOTM0MGZmNmQ3NmNkYSIsIm5vbWJyZSI6InRlc3QxIiwiZW1haWwiOiJ0ZXN0MUB0ZXN0MS5jb20iLCJwYXNzd29yZCI6IjopIiwicm9sZSI6IkFETUlOX1JPTEUiLCJfX3YiOjB9LCJpYXQiOjE2NDYzMjkxMjYsImV4cCI6MTY0NjM0MzUyNn0.hQYbDhyKbrBST-tdnNGIkDRGFYhOa3-xxC_LLzuZ4IY",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"usuario"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYyMWU2MWRjZDBkOTM0MGZmNmQ3NmNkYSIsIm5vbWJyZSI6InRlc3QxIiwiZW1haWwiOiJ0ZXN0MUB0ZXN0MS5jb20iLCJwYXNzd29yZCI6IjopIiwicm9sZSI6IkFETUlOX1JPTEUiLCJfX3YiOjB9LCJpYXQiOjE2NDYzMjkxMjYsImV4cCI6MTY0NjM0MzUyNn0.hQYbDhyKbrBST-tdnNGIkDRGFYhOa3-xxC_LLzuZ4IY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Users",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "novo test1",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test1@test.com",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "ADMIN_ROLE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5500/usuario/621919d688d86a0b0115c24e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"usuario",
+						"621919d688d86a0b0115c24e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Users",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "novo test1",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test1@test.com",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "ADMIN_ROLE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5500/usuario/621919d688d86a0b0115c24e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"usuario",
+						"621919d688d86a0b0115c24e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
