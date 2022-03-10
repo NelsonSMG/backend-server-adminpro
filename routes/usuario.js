@@ -13,7 +13,12 @@ var Usuario = require('../models/usuario');
 
 app.get('/', (request, response, next) => {
 
+    var desde = request.query.desde || 0;
+    desde = Number(desde);
+
     Usuario.find({}, 'nombre email img role')
+    .skip(desde)
+    .limit(3)
     .exec(
         (error, usuarios)=>{
 
@@ -25,10 +30,14 @@ app.get('/', (request, response, next) => {
                 });
             }
 
-            response.status(200).json({
-                ok:true,
-                users: usuarios
-            });
+            Usuario.count({}, (err, conteo) => {
+                response.status(200).json({
+                    ok:true,
+                    users: usuarios,
+                    total: conteo
+                });
+            })
+
         }
     )
 });
