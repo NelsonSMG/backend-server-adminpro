@@ -45,7 +45,7 @@ app.get('/', (request, response, next) => {
 
 
 // POST
-app.post('/', mdAutenticacion.verificaToken, (req, res) => {
+app.post('/', (req, res) => {
 
     var body = req.body;
 
