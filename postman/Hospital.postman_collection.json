@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "acc2fbb1-6d10-4b15-958e-685dc3d7f019",
+		"name": "Hospital",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Hospital",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5500/hospital?desde=5",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"hospital"
+					],
+					"query": [
+						{
+							"key": "desde",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Hospital",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Hospital de boomers",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5500/hospital?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYyMjY5MjM5NTMyYTIwMzEyMmMwY2JhZCIsIm5vbWJyZSI6InRlc3QxIiwiZW1haWwiOiJ0ZXN0MUB0ZXN0MS5jb20iLCJwYXNzd29yZCI6IjopIiwicm9sZSI6IkFETUlOX1JPTEUiLCJfX3YiOjB9LCJpYXQiOjE2NDY3ODEzNDQsImV4cCI6MTY0Njc5NTc0NH0.VDOYJXwRMrnh8JgahWondDm0qK4oxErtzOzWXBvUYNk",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"hospital"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYyMjY5MjM5NTMyYTIwMzEyMmMwY2JhZCIsIm5vbWJyZSI6InRlc3QxIiwiZW1haWwiOiJ0ZXN0MUB0ZXN0MS5jb20iLCJwYXNzd29yZCI6IjopIiwicm9sZSI6IkFETUlOX1JPTEUiLCJfX3YiOjB9LCJpYXQiOjE2NDY3ODEzNDQsImV4cCI6MTY0Njc5NTc0NH0.VDOYJXwRMrnh8JgahWondDm0qK4oxErtzOzWXBvUYNk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Hospital",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Hospital Norte",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5500/hospital/6226926e2384c71574dc2742?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYyMjY5MjM5NTMyYTIwMzEyMmMwY2JhZCIsIm5vbWJyZSI6InRlc3QxIiwiZW1haWwiOiJ0ZXN0MUB0ZXN0MS5jb20iLCJwYXNzd29yZCI6IjopIiwicm9sZSI6IkFETUlOX1JPTEUiLCJfX3YiOjB9LCJpYXQiOjE2NDY2OTQ5ODgsImV4cCI6MTY0NjcwOTM4OH0.XmyOMVNgZPrQVasneDRkVWwMbAJyiKOCekMNzvZf3Rc",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"hospital",
+						"6226926e2384c71574dc2742"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYyMjY5MjM5NTMyYTIwMzEyMmMwY2JhZCIsIm5vbWJyZSI6InRlc3QxIiwiZW1haWwiOiJ0ZXN0MUB0ZXN0MS5jb20iLCJwYXNzd29yZCI6IjopIiwicm9sZSI6IkFETUlOX1JPTEUiLCJfX3YiOjB9LCJpYXQiOjE2NDY2OTQ5ODgsImV4cCI6MTY0NjcwOTM4OH0.XmyOMVNgZPrQVasneDRkVWwMbAJyiKOCekMNzvZf3Rc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Hospital",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Hospital Norte",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5500/hospital/6226926e2384c71574dc2742?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYyMjY5MjM5NTMyYTIwMzEyMmMwY2JhZCIsIm5vbWJyZSI6InRlc3QxIiwiZW1haWwiOiJ0ZXN0MUB0ZXN0MS5jb20iLCJwYXNzd29yZCI6IjopIiwicm9sZSI6IkFETUlOX1JPTEUiLCJfX3YiOjB9LCJpYXQiOjE2NDY2OTQ5ODgsImV4cCI6MTY0NjcwOTM4OH0.XmyOMVNgZPrQVasneDRkVWwMbAJyiKOCekMNzvZf3Rc",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"hospital",
+						"6226926e2384c71574dc2742"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYyMjY5MjM5NTMyYTIwMzEyMmMwY2JhZCIsIm5vbWJyZSI6InRlc3QxIiwiZW1haWwiOiJ0ZXN0MUB0ZXN0MS5jb20iLCJwYXNzd29yZCI6IjopIiwicm9sZSI6IkFETUlOX1JPTEUiLCJfX3YiOjB9LCJpYXQiOjE2NDY2OTQ5ODgsImV4cCI6MTY0NjcwOTM4OH0.XmyOMVNgZPrQVasneDRkVWwMbAJyiKOCekMNzvZf3Rc"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

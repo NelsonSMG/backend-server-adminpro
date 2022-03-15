@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "4db52a2e-6e03-44d2-a318-af60dd60fff9",
+		"name": "Medicos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Medicos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5500/medico?desde=1",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"medico"
+					],
+					"query": [
+						{
+							"key": "desde",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Medico",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Hara Akashi",
+							"type": "text"
+						},
+						{
+							"key": "hospital",
+							"value": "6227e4073da91a6dc7dbb642",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5500/medico?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYyMjY5MjM5NTMyYTIwMzEyMmMwY2JhZCIsIm5vbWJyZSI6InRlc3QxIiwiZW1haWwiOiJ0ZXN0MUB0ZXN0MS5jb20iLCJwYXNzd29yZCI6IjopIiwicm9sZSI6IkFETUlOX1JPTEUiLCJfX3YiOjB9LCJpYXQiOjE2NDY5NTM4MjUsImV4cCI6MTY0Njk2ODIyNX0.NUiRha5ZWd_EbGBRP2oq86OjHFeSw5HpfintIJYTuV0",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"medico"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYyMjY5MjM5NTMyYTIwMzEyMmMwY2JhZCIsIm5vbWJyZSI6InRlc3QxIiwiZW1haWwiOiJ0ZXN0MUB0ZXN0MS5jb20iLCJwYXNzd29yZCI6IjopIiwicm9sZSI6IkFETUlOX1JPTEUiLCJfX3YiOjB9LCJpYXQiOjE2NDY5NTM4MjUsImV4cCI6MTY0Njk2ODIyNX0.NUiRha5ZWd_EbGBRP2oq86OjHFeSw5HpfintIJYTuV0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Medico",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Guera Balazos",
+							"type": "text"
+						},
+						{
+							"key": "hospital",
+							"value": "622692ea2384c71574dc274f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5500/medico/6226994a2384c71574dc275a?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYyMjY5MjM5NTMyYTIwMzEyMmMwY2JhZCIsIm5vbWJyZSI6InRlc3QxIiwiZW1haWwiOiJ0ZXN0MUB0ZXN0MS5jb20iLCJwYXNzd29yZCI6IjopIiwicm9sZSI6IkFETUlOX1JPTEUiLCJfX3YiOjB9LCJpYXQiOjE2NDY2OTQ5ODgsImV4cCI6MTY0NjcwOTM4OH0.XmyOMVNgZPrQVasneDRkVWwMbAJyiKOCekMNzvZf3Rc",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"medico",
+						"6226994a2384c71574dc275a"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYyMjY5MjM5NTMyYTIwMzEyMmMwY2JhZCIsIm5vbWJyZSI6InRlc3QxIiwiZW1haWwiOiJ0ZXN0MUB0ZXN0MS5jb20iLCJwYXNzd29yZCI6IjopIiwicm9sZSI6IkFETUlOX1JPTEUiLCJfX3YiOjB9LCJpYXQiOjE2NDY2OTQ5ODgsImV4cCI6MTY0NjcwOTM4OH0.XmyOMVNgZPrQVasneDRkVWwMbAJyiKOCekMNzvZf3Rc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Medico",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Hospital Norte",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5500/medico/6226994a2384c71574dc275a?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYyMjY5MjM5NTMyYTIwMzEyMmMwY2JhZCIsIm5vbWJyZSI6InRlc3QxIiwiZW1haWwiOiJ0ZXN0MUB0ZXN0MS5jb20iLCJwYXNzd29yZCI6IjopIiwicm9sZSI6IkFETUlOX1JPTEUiLCJfX3YiOjB9LCJpYXQiOjE2NDY2OTQ5ODgsImV4cCI6MTY0NjcwOTM4OH0.XmyOMVNgZPrQVasneDRkVWwMbAJyiKOCekMNzvZf3Rc",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"medico",
+						"6226994a2384c71574dc275a"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjYyMjY5MjM5NTMyYTIwMzEyMmMwY2JhZCIsIm5vbWJyZSI6InRlc3QxIiwiZW1haWwiOiJ0ZXN0MUB0ZXN0MS5jb20iLCJwYXNzd29yZCI6IjopIiwicm9sZSI6IkFETUlOX1JPTEUiLCJfX3YiOjB9LCJpYXQiOjE2NDY2OTQ5ODgsImV4cCI6MTY0NjcwOTM4OH0.XmyOMVNgZPrQVasneDRkVWwMbAJyiKOCekMNzvZf3Rc"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
